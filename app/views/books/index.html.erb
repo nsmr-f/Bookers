@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <link rel="stylesheet" href="application.css"
+        <title>WebCampBackendNew</title>
+        <meta charset="UTF-8"/>
+    </head>
+</html>
+
+<body>
+<p id="notice"></p>
+<h1>Books</h1>
+<table>
+    <thead>
+        <tr>
+         <th>Title</th>
+         <th>Body</th>
+        </tr>
+    </thead>
+<tbody>
+<tr>
+      <td></td>
+      <td></td>
+      <td>
+       <a class="show_271116" href="">Show</a> 
+      </td>
+      <td>
+      <a class="edit_271178" href="">Edit</a>
+      </td>
+      <td>
+      <a class="destroy_271178" href="">Destroy</a>
+    </td>
+</tr>
+<tr>
+      <td></td>
+      <td></td>
+      <td>
+      <a class="show_271116" href="">Show</a>   
+      </td>
+      <td>
+      <a class="edit_271178" href="">Edit</a>
+      </td>
+      <td>
+      <a class="destroy_271178" href="">Destroy</a>
+      </td>
+</tr>
+<tr>
+      <td></td>
+      <td></td>
+      <td>
+      <a class="show_271116" href="">Show</a>   
+      </td>
+      <td>
+      <a class="edit_271178" href="">Edit</a>
+      </td>
+      <td>
+      <a class="destroy_271178" href="">Destroy</a>
+      </td>
+</tr>
+<tr>
+      <td></td>
+      <td></td>
+      <td>
+      <a class="show_271116" href="">Show</a>   
+      </td>
+      <td>
+      <a class="edit_271178" href="">Edit</a>
+      </td>
+      <td>
+      <a class="destroy_271178" href="">Destroy</a>
+      </td>
+</tr>
+<tr>
+      <td></td>
+      <td></td>
+      <td>
+      <a class="show_271116" href="">Show</a>   
+      </td>
+      <td>
+      <a class="edit_271178" href="">Edit</a>
+      </td>
+      <td>
+      <a class="destroy_271178" href="">Destroy</a>
+      </td>
+</tr>
+<tr>
+      <td></td>
+      <td></td>
+      <td>
+      <a class="show_271116" href="">Show</a>   
+      </td>
+      <td>
+      <a class="edit_271178" href="">Edit</a>
+      </td>
+      <td>
+      <a class="destroy_271178" href="">Destroy</a>
+      </td>
+</tr>
+<tr>
+      <td></td>
+      <td></td>
+      <td>
+      <a class="show_271116" href="">Show</a>   
+      </td>
+      <td>
+      <a class="edit_271178" href="">Edit</a>
+      </td>
+      <td>
+      <a class="destroy_271178" href="">Destroy</a>
+      </td>
+</tr>
+<tr>
+      <td></td>
+      <td></td>
+      <td>
+      <a class="show_271116" href="">Show</a>   
+      </td>
+      <td>
+      <a class="edit_271178" href="">Edit</a>
+      </td>
+      <td>
+      <a class="destroy_271178" href="">Destroy</a>
+      </td>
+</tr>
+<tr>
+      <td></td>
+      <td></td>
+      <td>
+      <a class="show_271116" href="">Show</a>   
+      </td>
+      <td>
+      <a class="edit_271178" href="">Edit</a>
+      </td>
+      <td>
+      <a class="destroy_271178" href="">Destroy</a>
+      </td>
+</tr>
+<tr>
+      <td></td>
+      <td></td>
+      <td>
+      <a class="show_271116" href="">Show</a>   
+      </td>
+      <td>
+      <a class="edit_271178" href="">Edit</a>
+      </td>
+      <td>
+      <a class="destroy_271178" href="">Destroy</a>
+      </td>
+</tr>
+</table>
+<h2>New book</h2>
+<%= form_with model:@book, local:true do |f| %>
+
+<div class="field">
+<label for="book_title">Title</label>
+<%= f.text_field :title %>
+</div>
+
+<div class="field">
+<label for="book_body">Body</label>
+<%= f.text_area :body %>
+</div>
+
+<div class="actions">
+<%= f.submit 'Create Book' %>
+</div>
+<% end %>
+
+</body>
+</html>
+
