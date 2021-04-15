@@ -1,9 +1,24 @@
-<h6>Title</h6>
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <link rel="stylesheet" href="application.css">
+        <title>WebCampBackendNew</title>
+        <meta charset="UTF-8"/>
+    </head>
+</html>
 
-<p><%= @book.title %></p>
-<h6>Body</h6>
+<body>
+ <p id="notice"></p>
+ <p>
+<strong>Title:</strong><%= @book.title %>
+</p>
 
-<p><%= @book.body %></p>
-
- <a href="/books">Edit</a>
- <a href="#">Back</a>
+<p>
+<strong>Body:</strong><%= @book.body %>
+</p>
+ <a href="">Edit</a>
+ |
+ <a href="/books">Back</a>
+ 
+ </body>
+ </html>
